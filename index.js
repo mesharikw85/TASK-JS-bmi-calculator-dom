@@ -31,26 +31,51 @@ if (calculateBMI < 18.5) {
   
   alert (`your bmi is ${calculateBMI}`);
 
-  if (age >= 19 && age <= 65) {
-    if (calculateBMI >= 14 && calculateBMI <= 18.5) {
+  if (age >= 19 && age <= 24) {
+     if (calculateBMI >= 19 && calculateBMI <= 24) {
+      calculateBMI = "Healthy";
+    } else   {
+      calculateBMI = "Not Healthy";
+    }
+  } else if (age >= 25 && age <= 34) {
+    if  (calculateBMI >= 20 && calculateBMI <= 25) {
       calculateBMI = "Healthy";
     } else {
       calculateBMI = "Not Healthy";
     }
-  } else if (age >= 6 && age <= 19) {
-    if (calculateBMI >= 15 && calculateBMI <= 24) {
+
+  } else if (age >= 35 && age <= 44) {
+    if  (calculateBMI >= 21 && calculateBMI <= 26) {
       calculateBMI = "Healthy";
     } else {
       calculateBMI = "Not Healthy";
     }
-  } else {
-    if (bmi >= 18.5 && bmi <= 24.9) {
+    
+  } 
+  else if (age >= 45 && age <= 54) {
+    if  (calculateBMI >= 22 && calculateBMI <= 27) {
       calculateBMI = "Healthy";
     } else {
       calculateBMI = "Not Healthy";
     }
-  }
-  
+    
+  } 
+  else if (age >= 55 && age <= 65) {
+    if  (calculateBMI >= 23 && calculateBMI <= 28) {
+      calculateBMI = "Healthy";
+    } else {
+      calculateBMI = "Not Healthy";
+    }
+    
+  } 
+  else  (age >= 65 ) 
+    if  (calculateBMI >= 24 && calculateBMI <= 29) {
+      calculateBMI = "Healthy";
+    } else {
+      calculateBMI = "Not Healthy";
+    }
+    
+   
   alert(`Your BMI is  ${calculateBMI}`);
 }
 
